@@ -1,7 +1,7 @@
 //console.dir(document)
 //console.log(document.doomain);
 
-console.log(document.title)
+/*console.log(document.title)
 document.title="Novi sajt"
 
 
@@ -38,3 +38,43 @@ console.log(document.querySelector("list-item"))
 console.log(document.querySelectorAll("list-item"));
 let lista = document.querySelector("list-item")
 lista[2].style.backgroundColor = "red"
+
+// parentNode
+
+console.log(document.getElementById("items").parentNode)
+let div=document.getElementById("items").parentNode
+div.style.backgroundColor="red"
+
+//child
+
+console.log(document.getElementById("items").childNodes)
+lsitItems[5].style.backgroundColor = "brown"
+
+// element
+
+console.log(document.getElementById("items").children)
+let listItemsElement = document.getElementById("items").children
+listItemsElement[2].style.backgroundColor="yellow"
+
+//first last child
+console.log(document.getElementById("items").firstChild);//node
+console.log(document.getElementById("items").firstElementChild);//element
+
+console.log(document.getElementById("items").lastChild);//node //text
+console.log(document.getElementById("items").lastElementChild);//element
+
+//sibling
+
+let listaH2= document.getElementsByClassName("title")[1];
+listaH2.nextElementSibling.getElementsByClassName.getElementsByClassName="pink"
+listaH2.previousElementSibling.getElementsByClassName.getElementsByClassName="greem"
+*/
+//kreiranje novih elemenata
+
+
+let newDiv= document.createElement("div");
+let textNode=document.createTextNode("neki tekst");
+newDiv.appendChild(textNode);
+let container = document.getElementById("container")
+let form =document.getElementsByClassName("form-inline")[0]
+container.insertBefore(newDiv,form)

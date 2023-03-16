@@ -68,7 +68,7 @@ console.log(document.getElementById("items").lastElementChild);//element
 let listaH2= document.getElementsByClassName("title")[1];
 listaH2.nextElementSibling.getElementsByClassName.getElementsByClassName="pink"
 listaH2.previousElementSibling.getElementsByClassName.getElementsByClassName="greem"
-*/
+
 //kreiranje novih elemenata
 
 
@@ -78,3 +78,41 @@ newDiv.appendChild(textNode);
 let container = document.getElementById("container")
 let form =document.getElementsByClassName("form-inline")[0]
 container.insertBefore(newDiv,form)
+
+//EVENT
+
+button=document.getElementById("submit-button")
+textFrom = document.getElementById("text-from")
+let addToList=function(){
+ let li =document.createEvent(1)
+ let text=document.createTextNode("textForm.value")
+ let.appendChild("text");
+let ul=document.getElementById("items")
+ul.insertBefore(li,ul.lastChild,nexSibling) 
+
+}
+button.addEventListener("click",addToList)
+
+textFrom.value=""
+let paragraf = document.querySelector("#prvo  p")
+let isClicked = false;
+let promeniBoju = function () {
+    isClicked = !isClicked;
+    if (isClicked)
+        paragraf.style.backgroundColor = "yellow"
+    else {
+        paragraf.style.backgroundColor = "white"
+    }
+
+}
+
+paragraf.addEventListener("click", promeniBoju)*/
+let boja="#";
+let paragraf = document.querySelector("#prvo  p")
+let isClicked = false;
+let promeniBoju = function () {
+    
+    let random = Math.Floor(Math.random()*1000000)
+        boja +=String(ranodm)
+        paragraf.style.backgrounColor=boja;
+    }
